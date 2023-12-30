@@ -1,0 +1,31 @@
+# Avoid accidental Sketch file upload 
+###############################################
+## Please do not remove line 5 - thanks! 🙂 ##
+###############################################
+*.sketch
+
+# Avoid accidental XD or Figma upload if you convert the design file
+#######################################################
+## Please do not remove lines 11 and 12 - thanks! 🙂 ##
+#######################################################
+*.xd
+*.fig
+
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+
+
+# The README-template.md will be edited when the project is done.
+# And style-guide.md file will be deleted so i dont need them to be included in github repository.
+README-template.md
+style-guide.md
+
+
+
+# The images in this folder is just to know what and how to design page on differenet devices.
+design/*
+
+
+
+
+node_modules
