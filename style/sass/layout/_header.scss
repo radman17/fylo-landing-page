@@ -3,20 +3,22 @@
     height: 5rem;
 
     &__logo-box {
+        display: block;
         float: left;
         width: 16rem;
-        height: 100%;
+        height: 5rem;
         overflow: hidden;
     }
 
     &__logo {
+        display: block;
         width: 100%;
         height: 100%;
     }
 
     &__list {
         float: right;
-        height: 100%;
+
     }
 
     &__item {
