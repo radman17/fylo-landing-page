@@ -32,7 +32,7 @@
         font-family: 'Raleway', sans-serif;
         text-decoration: none;
         text-transform: capitalize;
-        transition: opacity .2s;
+        transition: $transition-default;
         cursor: pointer;
 
         &:hover {

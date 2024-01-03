@@ -1,5 +1,7 @@
 // FONT
+// size
 $font-size-default: 1.6rem;
+// weight
 $font-weight-normal : 400;
 $font-weight-bold : 700;
 
@@ -10,6 +12,20 @@ $color-3 : hsl(224, 93%, 58%);
 $color-4 : hsl(170, 45%, 43%);
 $color-5 : hsl(240, 75%, 98%);
 $color-6 : hsl(0, 0%, 75%);
+$color-7 : #fe2e2e;
+
 // GRID
 $gutter-horizontal : 3rem;
 $gutter-vertical : 2rem;
+
+// BORDER
+// radius 
+$border-radius-normal : .3rem;
+
+// BOX SHADOW
+$box-shadow-small : 0 .1rem .5rem rgba(rgb(66, 66, 66), .2);
+$box-shadow-normal : 0 .2rem .5rem rgba(rgb(66, 66, 66), .2);
+$box-shadow-large : 0 .4rem .5rem rgba(rgb(66, 66, 66), .2);
+
+// TRANSITION
+$transition-default : all .2s;

@@ -9,3 +9,13 @@ body {
   font-size: $font-size-default;
   color: $color-1 ;
 }
+
+.heading-primary {
+  font-size: 3.2rem;
+  font-weight: $font-weight-bold;
+  font-family: "Raleway", sans-serif;
+}
+
+.paragraph {
+  font-size: $font-size-default;
+}
