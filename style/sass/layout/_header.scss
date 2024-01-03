@@ -1,12 +1,17 @@
 .header {
-    margin: 4rem;
-    height: 5rem;
+    width: 100%;
+    padding: 4.5rem 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 
     &__logo-box {
         display: block;
-        float: left;
-        width: 16rem;
-        height: 5rem;
+        flex-basis: 16rem;
         overflow: hidden;
     }
 
@@ -17,29 +22,22 @@
     }
 
     &__list {
-        float: right;
-
-    }
-
-    &__item {
-        display: inline-block;
-        line-height: 5rem;
-
-        &:not(:last-child) {
-            margin-right: 6rem;
-        }
-
+        align-self: center;
+        display: flex;
+        gap: 6rem;
     }
 
     &__link {
         color: $color-text-1;
+        font-family: 'Raleway', sans-serif;
         text-decoration: none;
         text-transform: capitalize;
         transition: opacity .2s;
+        cursor: pointer;
 
         &:hover {
             opacity: .7;
-            cursor: pointer;
+
         }
     }
 }
