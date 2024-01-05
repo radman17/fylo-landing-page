@@ -13,7 +13,7 @@ $color-4 : hsl(170, 45%, 43%);
 $color-5 : hsl(240, 75%, 98%);
 $color-6 : hsl(0, 0%, 75%);
 $color-7 : #fe2e2e;
-
+$color-8 : rgb(255, 255, 255);
 // GRID
 $gutter-horizontal : 3rem;
 $gutter-vertical : 2rem;
@@ -21,7 +21,8 @@ $gutter-vertical : 2rem;
 // BORDER
 // radius 
 $border-radius-normal : .3rem;
-
+$border-radius-large : .6rem;
+$border-radius-circle : 50%;
 // BOX SHADOW
 $box-shadow-small : 0 .1rem .5rem rgba(rgb(66, 66, 66), .2);
 $box-shadow-normal : 0 .2rem .5rem rgba(rgb(66, 66, 66), .2);

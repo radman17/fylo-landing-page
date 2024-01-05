@@ -1,0 +1,45 @@
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: $border-radius-large;
+    background-color: $color-8 ;
+    box-shadow: $box-shadow-normal;
+    padding: 3rem;
+
+    &__quotes-icon {
+        align-self: flex-start;
+        flex: 0 1 1.5rem;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        width: 32rem;
+    }
+
+    &__profile {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__profile-pic {
+        border-radius: $border-radius-circle;
+        flex: 0 1 4rem;
+        align-self: center;
+        overflow: hidden;
+    }
+
+    &__profile-information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__profile-name {
+        font-weight: $font-weight-bold;
+        font-size: 1.4rem;
+    }
+
+    &__profile-bio {
+        font-size: 1.2rem;
+    }
+}

@@ -1,6 +1,7 @@
 .hero-header {
     width: 100%;
     padding: 4.5rem 0;
+    margin-bottom: 10rem;
 
     &__content {
         display: flex;
@@ -17,9 +18,51 @@
 
     &__right {
         flex-basis: 50%;
+        display: flex;
+        align-items: center;
+
     }
 
     &__img {
         width: 100%;
     }
+}
+
+.about {
+    width: 100%;
+    padding: 10rem 0;
+    background-image: url(../../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    &__content {
+        display: flex;
+        gap: 5rem;
+    }
+
+    &__left {
+        flex-basis: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    &__right {
+        flex-basis: 45%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__cta,
+    &__comment {
+        align-self: flex-start;
+    }
+
+
 }
