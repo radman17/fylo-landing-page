@@ -32,7 +32,7 @@ body {
 
 .paragraph {
   font-size: 1.6rem; }
-  .paragraph--about {
+  .paragraph--about-section {
     width: 88%; }
 
 .margin-bottom-medium {
@@ -86,6 +86,8 @@ body {
     font-size: 1.4rem; }
   .comment__profile-bio {
     font-size: 1.2rem; }
+  .comment--about-section {
+    align-self: flex-start; }
 
 .cta {
   text-decoration: none;
@@ -96,6 +98,8 @@ body {
   .cta--green {
     color: #3c9f8f;
     border-bottom: 0.1rem solid #3c9f8f; }
+  .cta--about-section {
+    align-self: flex-start; }
 
 .form {
   display: flex;
@@ -107,7 +111,7 @@ body {
     gap: 1.5rem; }
   .form__input-group {
     position: relative; }
-    .form__input-group--hero-header {
+    .form__input-group--hero-header-section {
       flex-basis: 50%; }
   .form__input {
     padding: .8rem 2rem;
@@ -119,9 +123,9 @@ body {
     height: 100%;
     width: 100%;
     transition: all 0.2s; }
-    .form__input--hero-header {
+    .form__input--hero-header-section {
       border: 0.1rem solid #9c9c9c; }
-      .form__input--hero-header:focus {
+      .form__input--hero-header-section:focus {
         border: 0.1rem solid #242424; }
   .form__input-message {
     position: absolute;
@@ -171,45 +175,43 @@ body {
     .header__link:hover {
       opacity: .7; }
 
-.hero-header {
+.hero-header-section {
   width: 100%;
   padding: 4.5rem 0;
   margin-bottom: 10rem; }
-  .hero-header__content {
+  .hero-header-section .content {
     display: flex;
     gap: 5rem; }
-  .hero-header__left {
+  .hero-header-section .left {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .hero-header__right {
+  .hero-header-section .right {
     flex-basis: 50%;
     display: flex;
     align-items: center; }
-  .hero-header__img {
+  .hero-header-section .img {
     width: 100%; }
 
-.about {
+.about-section {
   width: 100%;
   padding: 10rem 0;
   background-image: url(../../images/bg-curve-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top; }
-  .about__content {
+  .about-section .content {
     display: flex;
     gap: 5rem; }
-  .about__left {
+  .about-section .left {
     flex-basis: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .about__right {
+  .about-section .right {
     flex-basis: 45%;
     display: flex;
     align-items: center; }
-  .about__img {
+  .about-section .img {
     width: 100%; }
-  .about__cta, .about__comment {
-    align-self: flex-start; }

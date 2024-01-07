@@ -1,14 +1,14 @@
-.hero-header {
+.hero-header-section {
     width: 100%;
     padding: 4.5rem 0;
     margin-bottom: 10rem;
 
-    &__content {
+    .content {
         display: flex;
         gap: 5rem;
     }
 
-    &__left {
+    .left {
         flex-basis: 50%;
         display: flex;
         flex-direction: column;
@@ -16,19 +16,19 @@
 
     }
 
-    &__right {
+    .right {
         flex-basis: 50%;
         display: flex;
         align-items: center;
 
     }
 
-    &__img {
+    .img {
         width: 100%;
     }
 }
 
-.about {
+.about-section {
     width: 100%;
     padding: 10rem 0;
     background-image: url(../../images/bg-curve-desktop.svg);
@@ -36,12 +36,12 @@
     background-size: cover;
     background-position: top;
 
-    &__content {
+    .content {
         display: flex;
         gap: 5rem;
     }
 
-    &__left {
+    .left {
         flex-basis: 55%;
         display: flex;
         flex-direction: column;
@@ -49,20 +49,17 @@
 
     }
 
-    &__right {
+    .right {
         flex-basis: 45%;
         display: flex;
         align-items: center;
     }
 
-    &__img {
+    .img {
         width: 100%;
     }
 
-    &__cta,
-    &__comment {
-        align-self: flex-start;
-    }
+
 
 
 }

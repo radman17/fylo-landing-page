@@ -12,7 +12,7 @@
     &__input-group {
         position: relative;
 
-        &--hero-header {
+        &--hero-header-section {
             flex-basis: 50%;
         }
     }
@@ -28,7 +28,7 @@
         width: 100%;
         transition: $transition-default;
 
-        &--hero-header {
+        &--hero-header-section {
             border: .1rem solid rgb(156, 156, 156);
 
             &:focus {
