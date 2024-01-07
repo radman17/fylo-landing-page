@@ -30,6 +30,11 @@ body {
   font-weight: 700;
   font-family: "Raleway", sans-serif; }
 
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif; }
+
 .paragraph {
   font-size: 1.6rem; }
   .paragraph--about-section {
@@ -133,11 +138,15 @@ body {
       height: 4rem; }
       .form__input--hero-header-section:focus {
         border: 0.1rem solid #242424; }
+    .form__input--get-started-section {
+      padding: 1.2rem 2rem; }
   .form__input-message {
     color: #fe2e2e;
     font-size: 1.2rem;
     width: 100%;
     display: none; }
+    .form__input-message--get-started-section {
+      color: #f6f6fe; }
   .form__input:not(:valid) {
     border: 0.1rem solid #fe2e2e; }
   .form__input:not(:valid) ~ .form__input-message {
@@ -218,3 +227,21 @@ body {
     align-items: center; }
   .about-section .img {
     width: 100%; }
+
+.get-started-section {
+  background-color: #585989;
+  color: white;
+  padding: 8rem 0; }
+  .get-started-section .content {
+    display: flex;
+    gap: 20rem; }
+  .get-started-section .left {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .get-started-section .right {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }

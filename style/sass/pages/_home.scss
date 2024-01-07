@@ -63,3 +63,29 @@
 
 
 }
+
+.get-started-section {
+    background-color: $color-2;
+    color: $color-8;
+    padding: 8rem 0;
+
+    .content {
+        display: flex;
+        gap: 20rem;
+    }
+
+    .left {
+        flex-basis: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .right {
+        flex-basis: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -43,6 +43,10 @@
                 border: .1rem solid rgb(36, 36, 36);
             }
         }
+
+        &--get-started-section {
+            padding: 1.2rem 2rem;
+        }
     }
 
     &__input-message {
@@ -50,6 +54,10 @@
         font-size: 1.2rem;
         width: 100%;
         display: none;
+
+        &--get-started-section {
+            color: $color-5;
+        }
     }
 
     &__input:not(:valid) {
