@@ -7,12 +7,20 @@
         display: flex;
         width: 100%;
         gap: 1.5rem;
+
+        &--hero-header-section {
+            align-items: flex-start;
+        }
     }
 
     &__input-group {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        flex-basis: 100%;
 
         &--hero-header-section {
+            height: 7.1rem;
             flex-basis: 50%;
         }
     }
@@ -20,16 +28,16 @@
     &__input {
         padding: .8rem 2rem;
         border-radius: $border-radius-normal;
-        border: .1rem solid transparent;
         font-size: 1.3rem;
         outline: none;
-        border: none;
+        border: .1rem solid transparent;
         height: 100%;
         width: 100%;
         transition: $transition-default;
 
         &--hero-header-section {
             border: .1rem solid rgb(156, 156, 156);
+            height: 4rem;
 
             &:focus {
                 border: .1rem solid rgb(36, 36, 36);
@@ -38,19 +46,14 @@
     }
 
     &__input-message {
-        position: absolute;
         color: $color-7;
         font-size: 1.2rem;
-        bottom: -2.5rem;
-        left: 0;
         width: 100%;
         display: none;
-
-
     }
 
     &__input:not(:valid) {
-        border: .1rem solid $color-7;
+        border: .1rem solid $color-7 ;
     }
 
     &__input:not(:valid)~&__input-message {
