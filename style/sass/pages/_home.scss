@@ -3,9 +3,18 @@
     padding: 4.5rem 0;
     margin-bottom: 10rem;
 
+    @include respond(phone) {
+        margin-bottom: 2rem;
+    }
+
+
     .content {
         display: flex;
         gap: 5rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
     }
 
     .left {
@@ -14,6 +23,9 @@
         flex-direction: column;
         justify-content: center;
 
+        @include respond(phone) {
+            text-align: center;
+        }
     }
 
     .right {
@@ -21,6 +33,9 @@
         display: flex;
         align-items: center;
 
+        @include respond(phone) {
+            order: -1;
+        }
     }
 
     .img {
@@ -36,9 +51,23 @@
     background-size: cover;
     background-position: top;
 
+    @include respond(phone) {
+        background-image: url(../../images/bg-curve-mobile.svg);
+        background-size: contain;
+        background-position: 0 4rem;
+        padding-bottom: 0;
+    }
+
     .content {
         display: flex;
         gap: 5rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            background-color: $color-5;
+            padding-block: 8rem;
+            gap: 10rem;
+        }
     }
 
     .left {
@@ -47,12 +76,19 @@
         flex-direction: column;
         justify-content: center;
 
+        @include respond(phone) {
+            align-items: center;
+        }
     }
 
     .right {
         flex-basis: 45%;
         display: flex;
         align-items: center;
+
+        @include respond(phone) {
+            order: -1;
+        }
     }
 
     .img {
@@ -72,6 +108,12 @@
     .content {
         display: flex;
         gap: 20rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+        }
     }
 
     .left {
@@ -80,6 +122,9 @@
         flex-direction: column;
         justify-content: center;
 
+        @include respond(phone) {
+            text-align: center;
+        }
     }
 
     .right {
@@ -87,5 +132,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include respond(phone) {
+            width: 80%;
+        }
     }
 }

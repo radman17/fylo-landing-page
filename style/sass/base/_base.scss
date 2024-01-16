@@ -13,7 +13,11 @@ ol {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 10px
+
+  @include respond(tab-port) {
+    font-size: 50%; // 8px
+  }
 }
 
 body {

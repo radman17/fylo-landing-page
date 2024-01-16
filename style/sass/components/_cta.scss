@@ -14,5 +14,9 @@
 
     &--about-section {
         align-self: flex-start;
+
+        @include respond(phone) {
+            align-self: auto;
+        }
     }
 }

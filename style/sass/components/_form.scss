@@ -1,7 +1,18 @@
 .form {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
+
+
+    @include respond(phone) {
+        flex-wrap: wrap;
+
+        &>* {
+            flex-basis: 100%;
+            width: 100%;
+        }
+    }
 
     &__group {
         display: flex;
@@ -11,6 +22,15 @@
         &--hero-header-section {
             align-items: flex-start;
         }
+
+        @include respond(phone) {
+            flex-wrap: wrap;
+
+            &>* {
+                flex-basis: 100%;
+            }
+        }
+
     }
 
     &__input-group {
@@ -22,6 +42,11 @@
         &--hero-header-section {
             height: 7.1rem;
             flex-basis: 50%;
+
+            @include respond(phone) {
+                height: auto;
+                flex-basis: 100%;
+            }
         }
     }
 
@@ -39,6 +64,11 @@
             border: .1rem solid rgb(156, 156, 156);
             height: 4rem;
 
+            @include respond(phone) {
+                height: auto;
+
+            }
+
             &:focus {
                 border: .1rem solid rgb(36, 36, 36);
             }
@@ -47,6 +77,11 @@
         &--get-started-section {
             padding: 1.2rem 2rem;
         }
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+            padding: 1rem 2rem;
+        }
     }
 
     &__input-message {
@@ -54,10 +89,13 @@
         font-size: 1.2rem;
         width: 100%;
         display: none;
+        text-align: start;
 
         &--get-started-section {
             color: $color-5;
         }
+
+        font-size: 1.4rem;
     }
 
     &__input:not(:valid) {

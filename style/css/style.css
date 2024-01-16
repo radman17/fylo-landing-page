@@ -14,6 +14,9 @@ ol {
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -29,6 +32,14 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   font-family: "Raleway", sans-serif; }
+  @media only screen and (max-width: 56.25em) {
+    .heading-primary {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      font-size: 3rem; }
+      .heading-primary--about-section {
+        font-size: 2rem; } }
 
 .heading-secondary {
   font-size: 2.5rem;
@@ -37,14 +48,27 @@ body {
 
 .paragraph {
   font-size: 1.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph {
+      font-size: 1.8rem; } }
   .paragraph--about-section {
     width: 88%; }
+    @media only screen and (max-width: 37.5em) {
+      .paragraph--about-section {
+        text-align: start;
+        width: 100%; } }
 
 .margin-bottom-medium {
   margin-bottom: 1.3rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-medium {
+      margin-bottom: 2.3rem !important; } }
 
 .margin-bottom-large {
   margin-bottom: 2.6rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .margin-bottom-large {
+      margin-bottom: 3.6rem !important; } }
 
 .btn {
   border-radius: 0.3rem;
@@ -60,6 +84,9 @@ body {
   .btn--primary {
     background-color: #3065f8;
     color: #f6f6fe; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      font-size: 1.8rem; } }
 
 .comment {
   display: flex;
@@ -93,6 +120,9 @@ body {
     font-size: 1.2rem; }
   .comment--about-section {
     align-self: flex-start; }
+    @media only screen and (max-width: 37.5em) {
+      .comment--about-section {
+        align-self: auto; } }
 
 .cta {
   text-decoration: none;
@@ -105,17 +135,32 @@ body {
     border-bottom: 0.1rem solid #3c9f8f; }
   .cta--about-section {
     align-self: flex-start; }
+    @media only screen and (max-width: 37.5em) {
+      .cta--about-section {
+        align-self: auto; } }
 
 .form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .form {
+      flex-wrap: wrap; }
+      .form > * {
+        flex-basis: 100%;
+        width: 100%; } }
   .form__group {
     display: flex;
     width: 100%;
     gap: 1.5rem; }
     .form__group--hero-header-section {
       align-items: flex-start; }
+    @media only screen and (max-width: 37.5em) {
+      .form__group {
+        flex-wrap: wrap; }
+        .form__group > * {
+          flex-basis: 100%; } }
   .form__input-group {
     display: flex;
     flex-direction: column;
@@ -124,6 +169,10 @@ body {
     .form__input-group--hero-header-section {
       height: 7.1rem;
       flex-basis: 50%; }
+      @media only screen and (max-width: 37.5em) {
+        .form__input-group--hero-header-section {
+          height: auto;
+          flex-basis: 100%; } }
   .form__input {
     padding: .8rem 2rem;
     border-radius: 0.3rem;
@@ -136,15 +185,24 @@ body {
     .form__input--hero-header-section {
       border: 0.1rem solid #9c9c9c;
       height: 4rem; }
+      @media only screen and (max-width: 37.5em) {
+        .form__input--hero-header-section {
+          height: auto; } }
       .form__input--hero-header-section:focus {
         border: 0.1rem solid #242424; }
     .form__input--get-started-section {
       padding: 1.2rem 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .form__input {
+        font-size: 1.6rem;
+        padding: 1rem 2rem; } }
   .form__input-message {
     color: #fe2e2e;
     font-size: 1.2rem;
     width: 100%;
-    display: none; }
+    display: none;
+    text-align: start;
+    font-size: 1.4rem; }
     .form__input-message--get-started-section {
       color: #f6f6fe; }
   .form__input:not(:valid) {
@@ -162,19 +220,32 @@ body {
   background-color: #070439;
   color: #bfbfbf;
   padding: 8rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      font-size: 2rem; } }
   .footer__content {
     display: flex;
     flex-direction: column;
     gap: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__content {
+        gap: 4rem; } }
   .footer__logo {
     fill: white; }
   .footer__columns-wrapper {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__columns-wrapper {
+        gap: 5rem;
+        flex-direction: column; } }
   .footer__contact-us-list {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__contact-us-list {
+        gap: 2rem; } }
   .footer__contact-us-item {
     display: flex;
     gap: 1rem;
@@ -192,6 +263,9 @@ body {
   .footer__social-media-list {
     display: flex;
     gap: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__social-media-list {
+        justify-content: center; } }
   .footer__social-media-link {
     width: 3rem;
     height: 3rem;
@@ -220,6 +294,9 @@ body {
     display: block;
     flex-basis: 16rem;
     overflow: hidden; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo-box {
+        flex-basis: 10rem; } }
   .header__logo {
     display: block;
     width: 100%;
@@ -228,6 +305,9 @@ body {
     align-self: center;
     display: flex;
     gap: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__list {
+        gap: 3rem; } }
   .header__link {
     color: #070439;
     font-family: 'Raleway', sans-serif;
@@ -242,18 +322,30 @@ body {
   width: 100%;
   padding: 4.5rem 0;
   margin-bottom: 10rem; }
+  @media only screen and (max-width: 37.5em) {
+    .hero-header-section {
+      margin-bottom: 2rem; } }
   .hero-header-section .content {
     display: flex;
     gap: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .hero-header-section .content {
+        flex-direction: column; } }
   .hero-header-section .left {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .hero-header-section .left {
+        text-align: center; } }
   .hero-header-section .right {
     flex-basis: 50%;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .hero-header-section .right {
+        order: -1; } }
   .hero-header-section .img {
     width: 100%; }
 
@@ -264,18 +356,36 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top; }
+  @media only screen and (max-width: 37.5em) {
+    .about-section {
+      background-image: url(../../images/bg-curve-mobile.svg);
+      background-size: contain;
+      background-position: 0 4rem;
+      padding-bottom: 0; } }
   .about-section .content {
     display: flex;
     gap: 5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about-section .content {
+        flex-direction: column;
+        background-color: #f6f6fe;
+        padding-block: 8rem;
+        gap: 10rem; } }
   .about-section .left {
     flex-basis: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .about-section .left {
+        align-items: center; } }
   .about-section .right {
     flex-basis: 45%;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .about-section .right {
+        order: -1; } }
   .about-section .img {
     width: 100%; }
 
@@ -286,13 +396,24 @@ body {
   .get-started-section .content {
     display: flex;
     gap: 20rem; }
+    @media only screen and (max-width: 37.5em) {
+      .get-started-section .content {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center; } }
   .get-started-section .left {
     flex-basis: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .get-started-section .left {
+        text-align: center; } }
   .get-started-section .right {
     flex-basis: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .get-started-section .right {
+        width: 80%; } }
